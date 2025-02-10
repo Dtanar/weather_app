@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Weather App</h1>
+        <div class="theme-toggle">
+            <button id="theme-button" aria-label="Toggle theme">🌙</button>
+        </div>
+    </header>
+    <main>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Enter city or location"
+                aria-label="Search for a city or location" />
+            <button id="search-button">Search</button>
+            <button id="location-button">Use My Location</button>
+        </div>
+        <div class="weather-container">
+            <!-- Current Weather -->
+            <div class="current-weather card">
+                <h2>Current Weather</h2>
+                <div class="weather-info">
+                    <div class="temperature"></div>
+                    <div class="condition"></div>
+                    <div class="humidity"></div>
+                    <div class="precipitation"></div>
+                    <div class="sunrise-sunset"></div>
+                </div>
+            </div>
+            <!-- Forecast -->
+            <div class="forecast card">
+                <h2>Forecast</h2>
+                <div class="forecast-days"></div>
+            </div>
+            <!-- Map -->
+            <div class="map-container card">
+                <h2>Location Map</h2>
+                <div id="map"></div>
+            </div>
+        </div>
+    </main>
+    <!-- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
